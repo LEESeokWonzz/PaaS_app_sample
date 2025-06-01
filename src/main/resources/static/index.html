@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>이원석 - 프로젝트 중심 포트폴리오</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f9f9f9;
+    }
+    header {
+      background: #333;
+      color: #fff;
+      padding: 15px 20px;
+      position: sticky;
+      top: 0;
+      z-index: 999;
+    }
+    nav a {
+      color: #fff;
+      margin-right: 20px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    section {
+      padding: 30px 20px;
+      border-bottom: 1px solid #ddd;
+    }
+    h2 {
+      color: #333;
+    }
+    .project {
+      background: #fff;
+      border-radius: 8px;
+      margin-bottom: 15px;
+      padding: 15px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      cursor: pointer;
+    }
+    .project:hover {
+      background-color: #f0f0f0;
+    }
+    .details {
+      display: none;
+      margin-top: 10px;
+      font-size: 14px;
+      color: #444;
+    }
+    .tag {
+      background: #eee;
+      border-radius: 4px;
+      padding: 2px 6px;
+      margin-right: 5px;
+      font-size: 12px;
+      display: inline-block;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <nav>
+    <a href="#projects">📁 프로젝트</a>
+    <a href="#skills">🛠 기술 스택</a>
+    <a href="#about">👤 소개</a>
+    <a href="#contact">📬 연락처</a>
+  </nav>
+</header>
+
+<section id="projects">
+  <div class="project" onclick="toggleDetails(this)">
+    <strong>생성형 AI 서비스 개발</strong><br/>
+    <small>2024.11 ~ 2025.02 | FastAPI + React</small>
+    <div class="details">
+      <p>현대로템 폐쇄망 내에서 생성형 AI 서비스 프론트엔드 및 백엔드 모듈 개발.</p>
+      <p>사용 기술: <span class="tag">Python</span> <span class="tag">FastAPI</span> <span class="tag">React</span> <span class="tag">LLM</span></p>
+    </div>
+  </div>
+
+  <div class="project" onclick="toggleDetails(this)">
+    <strong>검색엔진 고도화 API 개발</strong><br/>
+    <small>2024.10 | Java + Spring</small>
+    <div class="details">
+      <p>LG CNS에서 검색엔진 API 기능 개선 및 고도화 작업 수행.</p>
+      <p>사용 기술: <span class="tag">Java</span> <span class="tag">Spring Framework</span></p>
+    </div>
+  </div>
+
+  <div class="project" onclick="toggleDetails(this)">
+    <strong>IaaS 파이프라인 고도화</strong><br/>
+    <small>2024.04 ~ 2024.07 | Jenkins + Docker + K8s</small>
+    <div class="details">
+      <p>400개 이상의 Jenkins 파이프라인 통합. SonarQube 및 SSH 인증 전환.</p>
+      <p>사용 기술: <span class="tag">Jenkins</span> <span class="tag">Docker</span> <span class="tag">Kubernetes</span> <span class="tag">SonarQube</span></p>
+    </div>
+  </div>
+
+  <div class="project" onclick="toggleDetails(this)">
+    <strong>Jira-Jenkins Webhook + ScriptRunner 개발</strong><br/>
+    <small>2023.10 ~ 2024.01 | Jira + Jenkins</small>
+    <div class="details">
+      <p>Webhook 기반 자동 댓글 생성 기능 개발.</p>
+      <p>사용 기술: <span class="tag">Jira</span> <span class="tag">Jenkins</span> <span class="tag">Bitbucket</span> <span class="tag">Linux</span></p>
+    </div>
+  </div>
+
+    <div class="project" onclick="toggleDetails(this)">
+    <strong>Atlassian 커스텀 플러그인 파이프라인 생성</strong><br/>
+    <small>2024.07  2024.08 | Jenkins + docker</small>
+    <div class="details">
+      <p> Atlassian-SDK Dockerfile 생성 및 플러그인 파이프라인 구축</p>
+      <p>사용 기술: <span class="tag">Docker</span> <span class="tag">Jenkins</span> <span class="tag">Kubernetes</span> <span class="tag">Linux</span></p>
+    </div>
+  </div>
+
+</section>
+
+<section id="skills">
+  <h2>🛠 기술 스택</h2>
+  <p>
+    <span class="tag">Python</span>
+    <span class="tag">FastAPI</span>
+    <span class="tag">React</span>
+    <span class="tag">Jenkins</span>
+    <span class="tag">Docker</span>
+    <span class="tag">Kubernetes</span>
+    <span class="tag">Spring Framework</span>
+    <span class="tag">Oracle SQL</span>
+    <span class="tag">Linux</span>
+    <span class="tag">Git</span>
+    <span class="tag">Jira</span>
+    <span class="tag">Confluence</span>
+  </p>
+</section>
+
+<section id="about">
+  <h2>👤 간단 소개</h2>
+  <p>
+    DevOps 운영과 협업 도구 관리를 중심으로 한 2년 7개월 이상의 실무 경험을 바탕으로, 안정적인 CI/CD 환경을 구축하고 자동화된 배포 환경을 운영해 왔습니다. 
+    Jenkins 기반의 파이프라인 구성, Kubernetes와 Docker를 활용한 컨테이너 오케스트레이션, 그리고 Atlassian 제품군(Jira, Confluence, Bitbucket)의 운영 및 커스터마이징 경험을 갖추고 있습니다. 
+    최근에는 생성형 AI Python 기반 API 개발과 React 프론트엔드 개발까지 경험하며 풀스택 업무도 수행하고 있습니다.
+  </p>
+</section>
+
+<section id="contact">
+  <h2>📬 연락처</h2>
+  <p>
+    📧 이메일: yesman0914@gmail.com<br/>
+    📱 연락처: 010-5068-3813<br/>
+    📍 주소: 서울 중랑구 면목로78길
+  </p>
+</section>
+
+<script>
+  function toggleDetails(elem) {
+    const detail = elem.querySelector('.details');
+    const isVisible = detail.style.display === 'block';
+    document.querySelectorAll('.details').forEach(d => d.style.display = 'none');
+    detail.style.display = isVisible ? 'none' : 'block';
+  }
+</script>
+
+</body>
+</html>
